@@ -175,22 +175,6 @@ streamlit run dashboard.py
   - `streamlit` - Interactive dashboard
   - `scikit-learn` - Data preprocessing (StandardScaler)
 
-## 📝 Catatan Penting
-
-### Untuk Rating 5 Bintang:
-✅ Dokumentasi markdown yang rapi dan profesional  
-✅ Visualisasi informatif dengan label & title yang jelas  
-✅ Analisis lanjutan (clustering, correlation)  
-✅ Dashboard interaktif dengan filter  
-✅ Struktur kode yang terorganisir  
-✅ Insight mendalam di setiap tahap analisis  
-
-### Data Quality Notes:
-- Missing values pada PM2.5 telah dihapus (~2% data)
-- Missing values pada polutan lain dipertahankan (tidak kritis untuk analisis)
-- Tidak ada duplikasi data
-- Outliers dipertahankan (merepresentasikan episode polusi ekstrem)
-
 ## 🎓 Referensi
 
 ### WHO Air Quality Guidelines
@@ -206,18 +190,6 @@ streamlit run dashboard.py
 - Unhealthy: 151-200
 - Very Unhealthy: 201-300
 - Hazardous: 300+
-
-## 👥 Author
-
-**Data Analytics Team**  
-Proyek Akhir Analisis Data - 2024
-
-## 📞 Support
-
-Jika mengalami masalah:
-1. Pastikan folder `PRSA_Data_20130301-20170228` berada di direktori yang sama
-2. Pastikan semua dependencies terinstall dengan benar
-3. Gunakan Python 3.8 atau lebih baru
 
 ## 📄 License
 
