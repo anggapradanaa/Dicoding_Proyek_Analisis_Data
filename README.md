@@ -196,7 +196,3 @@ streamlit run dashboard.py
 Proyek ini dibuat untuk keperluan edukasi dan analisis data.
 
 ---
-
-**Target Achievement**: ⭐⭐⭐⭐⭐ (5 Stars)
-
-*Built with ❤️ for better air quality understanding*
