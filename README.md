@@ -28,23 +28,6 @@ Proyek ini menganalisis kualitas udara di Beijing untuk menjawab 4 pertanyaan bi
 - ✅ Klasifikasi tingkat polusi
 - ✅ Distribusi kualitas udara
 
-## 📁 Struktur File
-
-```
-project/
-│
-├── PRSA_Data_20130301-20170228/    # Folder data (12 CSV files)
-│   ├── PRSA_Data_Aotizhongxin_20130301-20170228.csv
-│   ├── PRSA_Data_Changping_20130301-20170228.csv
-│   ├── ...
-│   └── PRSA_Data_Wanshouxigong_20130301-20170228.csv
-│
-├── analysis_notebook.ipynb          # Notebook analisis lengkap
-├── dashboard.py                     # Streamlit dashboard
-├── requirements.txt                 # Dependencies
-└── README.md                        # Dokumentasi ini
-```
-
 ## 🚀 Cara Menjalankan
 
 ### 1. Persiapan Environment
