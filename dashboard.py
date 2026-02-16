@@ -295,7 +295,7 @@ def main():
     
     st.markdown("---")
     
-    # ==================== PERTANYAAN 1: STATION TERTINGGI ====================
+    # ==================== VISUALISASI 1: STATION TERTINGGI ====================
     st.header("Stasiun Paling Terdampak Polusi PM2.5")
     
     # Calculate average PM2.5 by station (using filtered data)
@@ -342,15 +342,14 @@ def main():
         """)
     else:
         st.info(f"""
-        **📌 Insight Pertanyaan 1:**
-        
+                        
         Stasiun dengan rata-rata PM2.5 tertinggi adalah **{station_avg.iloc[0]['Station']}** 
         dengan nilai **{station_avg.iloc[0]['Average_PM2.5']:.2f} µg/m³**.
         """)
     
     st.markdown("---")
     
-    # ==================== PERTANYAAN 2: POLA MUSIMAN ====================
+    # ==================== VISUALISASI 2: POLA MUSIMAN ====================
     st.header("Pola Musiman PM2.5")
     
     # Monthly pattern (using filtered data)
@@ -453,7 +452,7 @@ def main():
     
     st.markdown("---")
     
-    # ==================== PERTANYAAN 3: CLUSTERING ====================
+    # ==================== VISUALISASI 3: CLUSTERING ====================
     st.header("Clustering Station Berdasarkan Karakteristik Polusi")
     
     col1, col2 = st.columns([1, 1])
@@ -589,7 +588,7 @@ def main():
     
     st.markdown("---")
     
-    # ==================== PERTANYAAN 4: DISTRIBUSI KUALITAS UDARA ====================
+    # ==================== VISUALISASI 4: DISTRIBUSI KUALITAS UDARA ====================
     st.header("Distribusi Kualitas Udara Berdasarkan Lokasi")
     
     # Add category to filtered data
