@@ -6,27 +6,30 @@ Proyek analisis kualitas udara di Beijing menggunakan data dari 12 stasiun monit
 
 Proyek ini menganalisis kualitas udara di Beijing untuk menjawab 4 pertanyaan bisnis utama:
 
-1. **Station mana yang memiliki rata-rata PM2.5 tertinggi?**
-2. **Bagaimana pola musiman (bulanan/tahunan) PM2.5 di Beijing?**
-3. **Apakah terdapat kelompok station dengan karakteristik polusi yang mirip?**
-4. **Bagaimana distribusi kualitas udara berdasarkan lokasi/station?**
+1. **Station mana yang memiliki rata-rata PM2.5 tertinggi selama periode pengamatan?**
+2. **Bagaimana pola musiman PM2.5 di Beijing selama periode 2013-2017, dan bulan apa yang konsisten menunjukkan konsentrasi tertinggi dan terendah?**
+3. **Bagaimana pengelompokan stasiun monitoring berdasarkan tingkat rata-rata PM2.5 selama periode 2013-2017, dan karakteristik polusi apa yang membedakan setiap kelompok?**
+
+---
 
 ## 🎯 Fitur Utama
 
-### Notebook Analysis
+### 📓 Notebook Analysis
 - ✅ Data wrangling lengkap (gathering, assessing, cleaning)
 - ✅ Exploratory Data Analysis (EDA) komprehensif
 - ✅ Visualisasi profesional dengan matplotlib & seaborn
 - ✅ Analisis lanjutan: clustering manual & correlation analysis
 - ✅ Kesimpulan mendalam untuk setiap pertanyaan bisnis
 
-### Interactive Dashboard
+### 📊 Interactive Dashboard
 - ✅ Filter interaktif (station & date range)
 - ✅ Real-time metric cards
 - ✅ Tren PM2.5 dinamis
 - ✅ Perbandingan antar station
-- ✅ Klasifikasi tingkat polusi
-- ✅ Distribusi kualitas udara
+- ✅ Clustering tingkat polusi
+- ✅ Correlation heatmap antar variabel
+
+---
 
 ## 🚀 Cara Menjalankan
 
@@ -119,7 +122,7 @@ streamlit run dashboard.py
 - Line charts untuk tren temporal
 - Bar charts untuk perbandingan stasiun
 - Heatmaps untuk korelasi
-- Stacked bar charts untuk distribusi kualitas udara
+- Horizontal bar chart untuk clustering
 
 ## 📈 Hasil Utama
 
@@ -131,21 +134,7 @@ streamlit run dashboard.py
    - Musim Dingin: PM2.5 tertinggi (85-100 µg/m³)
    - Musim Panas: PM2.5 terendah (50-60 µg/m³)
 
-3. **Disparitas Geografis**: Perbedaan signifikan antar lokasi menunjukkan pentingnya strategi berbasis lokasi
-
-4. **Tren Positif**: Penurunan bertahap PM2.5 dari 2013-2017 mengindikasikan efektivitas kebijakan
-
-### Rekomendasi
-
-1. **Immediate Actions**:
-   - Fokus intervensi pada stasiun high pollution
-   - Sistem peringatan dini musim dingin
-   - Pembatasan aktivitas saat episode polusi tinggi
-
-2. **Long-term Strategies**:
-   - Transisi dari batubara ke energi bersih
-   - Pengembangan transportasi publik
-   - Peningkatan ruang terbuka hijau
+3. **Kelompok Polusi Berbeda**: Terdapat 4 cluster stasiun berdasarkan karakteristik tingkat polusi.
 
 ## 🛠️ Teknologi yang Digunakan
 
@@ -157,22 +146,6 @@ streamlit run dashboard.py
   - `seaborn` - Statistical visualization
   - `streamlit` - Interactive dashboard
   - `scikit-learn` - Data preprocessing (StandardScaler)
-
-## 🎓 Referensi
-
-### WHO Air Quality Guidelines
-- Good: 0-12 µg/m³
-- Moderate: 12-35 µg/m³
-- Unhealthy: 35-55 µg/m³
-- Very Unhealthy: >55 µg/m³
-
-### AQI Categories
-- Good: 0-50
-- Moderate: 51-100
-- Unhealthy for Sensitive Groups: 101-150
-- Unhealthy: 151-200
-- Very Unhealthy: 201-300
-- Hazardous: 300+
 
 ## 📄 License
 
